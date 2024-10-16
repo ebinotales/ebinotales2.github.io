@@ -49,7 +49,7 @@ Header
 .header {
   width: 100%;
   height: auto;
-  background-color: rgba(255,255,255, 0.7);
+  background-color: rgba(255,255,255, 0.4);
   /* headerを画面上部に固定する */
   position: fixed;
   top: 0;

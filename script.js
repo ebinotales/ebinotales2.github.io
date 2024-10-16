@@ -38,11 +38,11 @@ $(function(){
   $('#slider').slick({
     autoplay: false,                         // 自動再生オン
     autoplaySpeed: 3000,                    // スライドを3秒で切り替え
-    arrows: false,                           // 左右の矢印を表示
+    arrows: true,                           // 左右の矢印を表示
     dots: true,                             // ドット（ページ送り）を表示
     slidesToShow: 1,                        // スライドを1枚表示（※centerModeをtrueにすると両端に2枚見切れた状態になる）
-    centerMode: true,                       // センターモード（両端が見切れた状態になる）
-    centerPadding: '13%',                   // 見切れたコンテンツの幅を18%に設定
+    centerMode: false,                       // センターモード（両端が見切れた状態になる）
+    centerPadding: '10%',                   // 見切れたコンテンツの幅を18%に設定
     prevArrow:'<div class="prev"></div>',   // 前へ矢印のHTMLを変更する
     nextArrow:'<div class="next"></div>',   // 次へ矢印のHTMLを変更する
     responsive: [              // レスポンシブの設定
@@ -61,7 +61,7 @@ $(function(){
       dots: true,                             // ドット（ページ送り）を表示
       slidesToShow: 1,                        // スライドを1枚表示（※centerModeをtrueにすると両端に2枚見切れた状態になる）
       centerMode: false,                       // センターモード（両端が見切れた状態になる）
-      centerPadding: '0%',                   // 見切れたコンテンツの幅を18%に設定
+      centerPadding: '10%',                   // 見切れたコンテンツの幅を18%に設定
       prevArrow:'<div class="prev"></div>',   // 前へ矢印のHTMLを変更する
       nextArrow:'<div class="next"></div>',   // 次へ矢印のHTMLを変更する
       responsive: [              // レスポンシブの設定
