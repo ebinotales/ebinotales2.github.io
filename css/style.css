@@ -25,20 +25,10 @@ li {
   list-style: none;
 }
 .wrapper{
-  max-width: 100%;
-  /* margin: 0 auto 20px auto; */
+  max-width: 1280px;
+  margin: 0 auto 20px auto;
   text-align: center;
-  padding: 50px 2% 0 2%;
-}
-.photo_wrapper{
-  width: 100%;
-  max-width: 1920px;
-  /* object-fit: cover;
-  height: auto; */
-  /* margin: 0 auto 20px auto; */
-  text-align: center;
-  padding-top: 180px;
-  padding-bottom: 0px;
+  padding: 50px 4% 0 4%;
 }
 .sec-title {
   font-size: 1.2rem;
@@ -59,7 +49,7 @@ Header
 .header {
   width: 100%;
   height: auto;
-  background-color: rgba(255,255,255, 1);
+  background-color: rgba(255,255,255, 0.7);
   /* headerを画面上部に固定する */
   position: fixed;
   top: 0;
@@ -70,22 +60,20 @@ Header
   transition: opacity 1s ease-out, transform 0.8s ease-out;
   opacity: 0;
   /* font-family: "FontAwesome"; */
-  /* border: solid 1px #c8c8c8; */
 }
 .visible {
   transform: translateY(0); 
   opacity: 1;
 }
 .header-content {
-  width: 100%;
-  /* margin: 0 auto; */
+  /* width: 1280px; */
+  margin: 0 auto;
   text-align: center;
   padding: 5px 5px;
   /* transition: transform 0.3s 0.3s; */
-  /* border: solid 1px #c8c8c8; */
 }
 .hidden {
-  transform: translateY(-147px);
+  transform: translateY(-107px);
   /* background-color: rgba(255,255,255, 0.7); */
 }
 .hidden2 {
@@ -95,7 +83,7 @@ Header
   display: inline-block;
 }
 .logo {
-  width :400px;
+  width :300px;
   transition: opacity 0.5s ease; /* 透明度の変化をアニメーション化 */
 }
 .logo:hover {
@@ -111,11 +99,11 @@ Header
 }
 .icon {
   position: absolute;
-  top: 80px;
-  left: 92%;
+  top: 120px;
+  left: 85%;
 }
 .menu {
-  width: 100%;
+  width: 650px;
   margin: 0 auto 20px auto;
   text-align: center;
   /* border: solid 1px #c8c8c8; */
@@ -124,10 +112,8 @@ Header
 }
 .menu ul {
   display: flex;
-  justify-content:flex-end;
-  /* justify-content: space-between; */
+  justify-content: space-between;
   gap: 30px;
-  margin-right: 20px;
 }
 .menu a {
   color: black;
@@ -156,11 +142,11 @@ main {
   height: auto;
   /* border: solid 1px #c8c8c8; */
   /* opacity: 0.7; */
-  background-color: rgba(255,255,255, 0.7);
+  background-color: rgba(255,255,255, 0.5);
   /* background-color: white; */
   position: absolute;
   z-index: 10;
-  top: 800px;
+  top: 700px;
   left: 0px;
 }
 
@@ -170,7 +156,7 @@ mainvisual
 -------------------------------------------*/
 .mainvisual {
   position: fixed;
-  top: -150px; /* divの上端がビューポートからの距離 */
+  top: 0px; /* divの上端がビューポートからの距離 */
   left: 0px; /* divの左端がビューポートからの距離 */
   width: 100%;
   height: 500px;
@@ -275,21 +261,6 @@ photo
   height: auto;
   margin: 0 auto;
   padding: 0 1%;
-}
-
-/*
-スライダー本体
-*/
-#slider .slick-slide {
-  margin-right: 2vw! important;
-  margin-left: 2vw! important;
-}
-
-#slider .img {
-  width: 100%;
-  max-width: 1920px;
-  object-fit: cover;
-  height: auto;
 }
 
 /*
