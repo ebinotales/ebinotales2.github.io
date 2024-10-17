@@ -86,7 +86,7 @@ Header
 }
 .logo {
   width :300px;
-  margin: -5px auto auto 0px;
+  margin: -5px auto auto -50px;
   transition: opacity 0.5s ease; /* 透明度の変化をアニメーション化 */
   /* border: solid 1px #c8c8c8; */
 }
@@ -115,7 +115,7 @@ Header
   font-weight: bold;
   font-family: "Hiragino Sans";
   letter-spacing: 0.1rem;
-  font-size: 1.02rem;
+  font-size: 1rem;
   /* padding-bottom: 10px; */
 }
 .menu ul {
@@ -154,7 +154,7 @@ main {
   /* background-color: white; */
   position: absolute;
   z-index: 10;
-  top: 700px;
+  top: 900px;
   left: 0px;
 }
 
