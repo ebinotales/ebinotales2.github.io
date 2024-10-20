@@ -31,9 +31,13 @@ li {
   padding: 50px 4% 0 4%;
 }
 .sec-title {
-  font-size: 1.2rem;
   text-align: left;
   margin-bottom: 20px;
+  font-weight: bold;
+  font-family: "Hiragino Sans";
+  font-style: oblique;
+  letter-spacing: 0.1rem;
+  font-size: 4rem;
   border-bottom: solid 3px #24292e;
 }
 .sec-title2 {
@@ -48,8 +52,8 @@ Header
 -------------------------------------------*/
 .header {
   width: 100%;
-  height: 100px;
-  background-color: rgba(255,255,255, 0.7);
+  height: auto;
+  background-color: rgba(255,255,255, 0.5);
   /* headerを画面上部に固定する */
   position: fixed;
   top: 0;
@@ -59,20 +63,18 @@ Header
   transform: translateY(-130px);
   transition: opacity 1s ease-out, transform 0.8s ease-out;
   opacity: 0;
+  /* font-family: "FontAwesome"; */
 }
 .visible {
   transform: translateY(0); 
   opacity: 1;
 }
 .header-content {
-  width: 1280px;
+  /* width: 1280px; */
   margin: 0 auto;
   text-align: center;
-  /* text-align: left; */
   padding: 5px 5px;
   /* transition: transform 0.3s 0.3s; */
-  /* border: solid 1px #c8c8c8; */
-  display: flex;
 }
 .hidden {
   transform: translateY(-107px);
@@ -86,9 +88,7 @@ Header
 }
 .logo {
   width :300px;
-  margin: -5px auto auto -50px;
   transition: opacity 0.5s ease; /* 透明度の変化をアニメーション化 */
-  /* border: solid 1px #c8c8c8; */
 }
 .logo:hover {
   opacity: 0.7;
@@ -107,26 +107,25 @@ Header
   left: 85%;
 }
 .menu {
-  width: 600px;
-  margin: 30px 50px 100px 0px;
+  width: 650px;
+  margin: 0 auto 20px auto;
   text-align: center;
-  /* text-align: right; */
   /* border: solid 1px #c8c8c8; */
   font-weight: bold;
   font-family: "Hiragino Sans";
   /* font-family: "Noto Sans Japanese"; */
   letter-spacing: 0.1rem;
-  font-size: 1rem;
+  font-size: 0.9rem;
   /* padding-bottom: 10px; */
 }
 .menu ul {
   display: flex;
   justify-content: space-between;
-  gap: 50px;
+  gap: 30px;
 }
 .menu a {
   color: black;
-
+  font-size: 1rem;
 }
 .menu a:hover {
   opacity: 0.7;
@@ -151,11 +150,11 @@ main {
   height: auto;
   /* border: solid 1px #c8c8c8; */
   /* opacity: 0.7; */
-  background-color: rgba(255,255,255, 0.5);
+  background-color: rgba(255,255,255, 0.7);
   /* background-color: white; */
   position: absolute;
   z-index: 10;
-  top: 900px;
+  top: 860px;
   left: 0px;
 }
 
@@ -226,10 +225,21 @@ news&live
   /* border: dotted 1px #24292e; */
   display: flex;
   color: #24292e;
+  transition: transform 0.2s ease-out;
+}
+.content p {
+  text-align: left;
+  font-weight: bold;
+  font-family: "Hiragino Sans";
+  /* font-family: "Noto Sans Japanese"; */
+  /* letter-spacing: 0.1rem; */
+  font-size: 2rem;
 }
 .content a:hover {
-  color: black;
-  opacity: 0.5;
+  /* color: black; */
+  /* opacity: 0.5; */
+  transform: translateX(+15px);
+  transition: transform 0.2s ease-out;
 }
 .content {
   /* opacity: 0; */
@@ -239,7 +249,7 @@ news&live
   display: flex;
   flex-wrap: wrap;
   padding-bottom: 30px;
-  border-bottom: solid 3px #24292e;
+  /* border-bottom: solid 3px #24292e; */
   /* gap: 10px; */
 }
 .content dt {
@@ -254,9 +264,13 @@ news&live
   /* box-sizing: border-box; */
 }
 .content dt,dd {
-  border-bottom: dotted 1px #24292e;
+  /* border-bottom: dotted 1px #24292e; */
   padding: 10px 0px;
   /* border: dotted 1px #24292e; */
+}
+.viewmore {
+  flex-grow: 0;
+  justify-content: flex-end;
 }
 
 /*-------------------------------------------
@@ -365,7 +379,7 @@ SP
 
   .icon {
     position: absolute;
-    top: 30px;
+    top: 40px;
     left: 75%;
   }
 
