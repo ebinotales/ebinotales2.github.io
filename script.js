@@ -112,6 +112,7 @@ $(window).scroll(function() {
 window.addEventListener('scroll', () => {
 
 const header = document.querySelector('.header');
+const logo = document.querySelector('.logo');
 let prevY = window.scrollY; 
 
 console.log("sクロール");
@@ -119,8 +120,10 @@ console.log("sクロール");
 const currentY = window.scrollY;
 if ($(window).scrollTop() > 0) { 
   header.classList.add('hidden'); 
+  logo.classList.add('logo-move');
 } else { 
     header.classList.remove('hidden'); 
+    header.classList.remove('logo-move'); 
 }
 // prevY = currentY; 
 });

@@ -26,7 +26,7 @@ li {
 }
 .wrapper{
   max-width: 1280px;
-  margin: 0 auto 20px auto;
+  margin: 0 auto 0 auto;
   text-align: center;
   padding: 50px 4% 0 4%;
 }
@@ -53,7 +53,7 @@ Header
 .header {
   width: 100%;
   height: auto;
-  background-color: rgba(255,255,255, 0.5);
+  background-color: rgba(255,255,255, 0.7);
   /* headerを画面上部に固定する */
   position: fixed;
   top: 0;
@@ -77,17 +77,21 @@ Header
   /* transition: transform 0.3s 0.3s; */
 }
 .hidden {
-  transform: translateY(-107px);
+  transform: translateY(-100px);
   /* background-color: rgba(255,255,255, 0.7); */
-}
+  }
 .hidden2 {
-  transform: translateY(0);
+  /* transform: translateY(0); */
+}
+.logo-move {
+  /* transform:translate(-500px, 50px); */
+  /* width: 200px; */
 }
 .header-content a {
   display: inline-block;
 }
 .logo {
-  width :300px;
+  width :280px;
   transition: opacity 0.5s ease; /* 透明度の変化をアニメーション化 */
 }
 .logo:hover {
@@ -150,7 +154,7 @@ main {
   height: auto;
   /* border: solid 1px #c8c8c8; */
   /* opacity: 0.7; */
-  background-color: rgba(255,255,255, 0.7);
+  background-color: rgba(255,255,255, 0.75);
   /* background-color: white; */
   position: absolute;
   z-index: 10;
@@ -426,8 +430,16 @@ SP
   }
 
   .main-content {
-    top: 250px;
+    top: 240px;
     left: 0px;
+  }
+
+  .sec-title {
+    font-size: 3rem;
+  }
+
+  .content p {
+    font-size: 1.5rem;
   }
 }
 
@@ -548,3 +560,16 @@ footer
 }
 /* .header .hidden {
   top: -100px; /* 適切な値に調整してください */
+
+  .live-wrapper,
+  .disco-content {
+    /* width: 100%; */
+    /* background-color: #005FFF; */
+    /* opacity: 0.9; */
+  }
+
+  .video-content,
+  .news-content {
+    /* width: 100%; */
+    /* background-color: white; */
+  }
