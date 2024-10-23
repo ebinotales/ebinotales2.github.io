@@ -36,7 +36,7 @@ li {
   font-weight: bold;
   font-family: "Hiragino Sans";
   font-style: oblique;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.3rem;
   font-size: 4rem;
   border-bottom: solid 3px #24292e;
 }
@@ -193,10 +193,11 @@ headline
 }
 .headline-content ul {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
 }
 .movie {
-  width: 50%;
+  width: calc(25% - 30px);
   text-align: left;
 }
 .headline-content iframe {
@@ -237,7 +238,7 @@ news&live
   font-family: "Hiragino Sans";
   /* font-family: "Noto Sans Japanese"; */
   /* letter-spacing: 0.1rem; */
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 .content a:hover {
   /* color: black; */
