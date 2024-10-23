@@ -26,13 +26,13 @@ li {
 }
 .wrapper{
   max-width: 1280px;
-  margin: 0 auto 0 auto;
+  margin: 0 auto 30px auto;
   text-align: center;
   padding: 50px 4% 0 4%;
 }
 .sec-title {
   text-align: left;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   font-weight: bold;
   font-family: "Hiragino Sans";
   font-style: oblique;
@@ -44,7 +44,10 @@ li {
   text-align: center;
   border: none;
   font-size: 1.2rem;
-  margin-bottom: 20px;
+  margin-bottom: none;
+}
+#page-title {
+  border-bottom: none;
 }
 
 /*-------------------------------------------
@@ -454,7 +457,7 @@ Profile
   object-fit: cover;
   height: auto;
 } */
-.biography {
+.biography, .headline-content {
   transition: opacity 1.0s ease;
   /* position: fixed; */
 }
@@ -573,4 +576,12 @@ footer
   .news-content {
     /* width: 100%; */
     /* background-color: white; */
+  }
+
+  .page-content {
+    /* margin-bottom: 30px; */
+  }
+
+  #page {
+    margin: auto; width: 60%
   }

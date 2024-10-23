@@ -89,12 +89,13 @@ $(document).ready(function() {
 $(window).scroll(function() {
   var scrollPos = $(window).scrollTop();
   var windowHeight = $(window).height();
-  var elementPos = $('.biography').offset().top;
+  // var elementPos = $('.biography').offset().top;
+  var elementPos = $('.headline-content').offset().top;
 
   if (scrollPos > elementPos - windowHeight + 130) {
-  $('.biography').css('opacity', '1');
+  $('.headline-content').css('opacity', '1');
   } else {
-  $('.biography').css('opacity', '0');
+  $('.headline-content').css('opacity', '0');
   }
 
   // console.log("あ");
