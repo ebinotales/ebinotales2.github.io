@@ -393,6 +393,7 @@ SP
 
   .mainvisual img {
   width: 100%;
+  margin-top: 86.23px;
   max-width: 1920px;
   object-fit: cover;
   height: auto;
@@ -434,7 +435,7 @@ SP
   }
 
   .main-content {
-    top: 240px;
+    top: 350px;
     left: 0px;
   }
 
@@ -445,6 +446,7 @@ SP
   .content p {
     font-size: 1.5rem;
   }
+
 }
 
 @media screen and (min-width: 901px) {
