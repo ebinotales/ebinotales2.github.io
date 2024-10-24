@@ -121,12 +121,10 @@ console.log("sクロール");
 const currentY = window.scrollY;
 if ($(window).scrollTop() > 0) { 
   header.classList.add('hidden'); 
-  logo.classList.add('logo-move');
 } else { 
     header.classList.remove('hidden'); 
-    header.classList.remove('logo-move'); 
 }
-// prevY = currentY; 
+// prevY = currentY;
 });
 
 $(function(){
