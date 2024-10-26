@@ -447,6 +447,11 @@ SP
     font-size: 1.5rem;
   }
 
+  .hidden {
+  transform: translateY(0px);
+  /* background-color: rgba(255,255,255, 0.7); */
+  }
+
 }
 
 @media screen and (min-width: 901px) {
@@ -624,7 +629,7 @@ footer
   }
   #overlay-button span {
     height: 4px;
-    width: 35px;
+    width: 30px;
     border-radius: 2px;
     background-color: #24292e;
     position: relative;
@@ -640,12 +645,12 @@ footer
   }
   #overlay-button span:before, #overlay-button span:after {
     height: 4px;
-    width: 35px;
+    width: 30px;
     border-radius: 2px;
     background-color: #24292e;
     position: absolute;
     content: "";
-    transition: all .2s ease-in-out;
+    transition: all .3s ease-in-out;
   }
   #overlay-button:hover span, #overlay-button:hover span:before, #overlay-button:hover span:after {
     background: #24292e;
@@ -678,7 +683,7 @@ footer
   #overlay {
     height: 100vh;
     width: 100vw;
-    background: #ec6451;
+    background: #465DAA;
     opacity: 0.9;
     z-index: 2;
     visibility: hidden;
@@ -693,7 +698,7 @@ footer
     align-items: center;
     flex-direction: column;
     text-align: center;
-    height: 100vh;
+    height: 35vh;
     padding-left: 0;
     list-style-type: none;
   }
@@ -701,11 +706,14 @@ footer
     padding: 1em;
   }
   #overlay ul li a {
-    color: #fff;
+    color: #24292e;
+    /* color: white; */
     text-decoration: none;
-    font-size: 1.5em;
+    font-size: 1.3em;
+    font-family: "Hiragino Sans";
+    font-weight: bold;
   }
   #overlay ul li a:hover {
-    color: #000!important;
+    color: #24292e!important;
     /* color: #24292e; */
   }
