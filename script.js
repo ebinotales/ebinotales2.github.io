@@ -22,12 +22,12 @@ document.addEventListener('DOMContentLoaded', () => {
   // ページが読み込まれた際にヘッダーを表示するアニメーション
   setTimeout(() => {
       header.classList.add('visible');
-  }, 500); // ミリ秒単位で適切な遅延時間を設定
+  }, 200); // ミリ秒単位で適切な遅延時間を設定
 
   setTimeout(() => {
       main.classList.add('visible');
       mainvisual.classList.add('visible');
-  }, 1000); // ミリ秒単位で適切な遅延時間を設定
+  }, 700); // ミリ秒単位で適切な遅延時間を設定
 });
 
 $(function(){

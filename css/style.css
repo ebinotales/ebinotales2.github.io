@@ -372,6 +372,11 @@ SP
     top: 40%;
   }
 
+  main, header {
+    /* transform: translateY(0px); */
+    transition: opacity 0.2s ease-out, transform 0.2s ease-out;
+  }
+
   html {
     font-size: 95%;
   }
@@ -402,6 +407,7 @@ SP
   .header-content {
     /* width: 1280px; */
     text-align: left;
+    background-color: white;
     /*     padding: 1px 1px; */
     /* transition: transform 0.3s 0.3s; */
   }
@@ -452,6 +458,10 @@ SP
   /* background-color: rgba(255,255,255, 0.7); */
   }
 
+  .wrapper{
+    padding: 0 4% 0 4%;
+  }
+
 }
 
 @media screen and (min-width: 901px) {
@@ -459,6 +469,10 @@ SP
   #overlay-button {
     display: none;
   }
+}
+
+#page-wrapper {
+  top: 100px;
 }
 
 /*-------------------------------------------
@@ -688,6 +702,8 @@ footer
     z-index: 2;
     visibility: hidden;
     position: fixed;
+    /* transition: 0.3s; */
+
   }
   #overlay.active {
   
