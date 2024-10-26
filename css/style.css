@@ -28,7 +28,14 @@ li {
   max-width: 1280px;
   margin: 0 auto 30px auto;
   text-align: center;
-  padding: 50px 4% 0 4%;
+  padding: 8% 4% 0 4%;
+}
+.footer-wrapper{
+  max-width: 1280px;
+  /* height: 800px; */
+  margin: 0 auto 0px auto;
+  text-align: center;
+  padding: 4% 4% 0% 4%;
 }
 .sec-title {
   text-align: left;
@@ -37,7 +44,7 @@ li {
   font-family: "Hiragino Sans";
   font-style: oblique;
   letter-spacing: 0.3rem;
-  font-size: 4rem;
+  font-size: 5rem;
   border-bottom: solid 3px #24292e;
 }
 .sec-title2 {
@@ -446,7 +453,7 @@ SP
   }
 
   .sec-title {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 
   .content p {
@@ -458,10 +465,17 @@ SP
   /* background-color: rgba(255,255,255, 0.7); */
   }
 
-  .wrapper{
-    padding: 0 4% 0 4%;
-  }
+  /* .logo-resize {
+    width: 150px;
+  } */
+  
+}
 
+@media screen and (max-width: 350px) {
+
+  .sec-title {
+    font-size: 1.8rem;
+  }
 }
 
 @media screen and (min-width: 901px) {
@@ -472,7 +486,8 @@ SP
 }
 
 #page-wrapper {
-  top: 100px;
+  top: 60px;
+  /* height: */
 }
 
 /*-------------------------------------------
@@ -488,6 +503,13 @@ Profile
 .biography, .headline-content {
   transition: opacity 1.0s ease;
   /* position: fixed; */
+}
+
+.biography p {
+  font-family: Hiragino Sans;
+  font-weight:350;
+  font-size:1rem;
+  text-align:left;
 }
 
 /*-------------------------------------------
@@ -571,8 +593,8 @@ footer
   background-color: #333;
   border: solid 1px black;
   z-index: 11;
-  /* position: fixed;
-  bottom: 0; */
+  /* position: fixed; */
+  bottom: 0;
 }
 .footer img {
   width: 250px;

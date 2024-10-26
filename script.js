@@ -120,9 +120,11 @@ console.log("sクロール");
 
 const currentY = window.scrollY;
 if ($(window).scrollTop() > 0) { 
-  header.classList.add('hidden'); 
+  header.classList.add('hidden');
+  // logo.classList.add('logo-resize');
 } else { 
-    header.classList.remove('hidden'); 
+    header.classList.remove('hidden');
+    // logo.classList.remove('logo-resize'); 
 }
 // prevY = currentY;
 });
