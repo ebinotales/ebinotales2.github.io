@@ -396,6 +396,11 @@ photo
 SP
 -------------------------------------------*/
 @media screen and (max-width: 900px) {
+  .hero-video {
+    object-fit: cover;       /* はみ出しOKで埋める */
+    object-position: center; /* 常に中央を基準に表示する */
+  }
+
 .footer-wrapper {
     display: flex;
     flex-direction: column;
