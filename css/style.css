@@ -521,6 +521,16 @@ SP
   /* .logo-resize {
     width: 150px;
   } */
+
+    /* まず全ページのデフォは余白なし */
+  .main-content {
+    margin-top: 0;
+  }
+
+  /* .mainvisual が直前にあるページだけ余白を付ける（= TOPだけ） */
+  .mainvisual + main .main-content {
+    margin-top: 100svh;
+  } 
   
 }
 
