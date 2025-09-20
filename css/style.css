@@ -181,17 +181,38 @@ mainvisual
   top: 0px; /* divの上端がビューポートからの距離 */
   left: 0px; /* divの左端がビューポートからの距離 */
   width: 100%;
-  height: 500px;
+  /* height: 500px; */
+  height: 100svh;
   /* background-color: black; */
   /* position: absolute; */
   /* border: solid 1px #c8c8c8; */
 
+  inset: 0;          /* 画面全体 */
+  z-index: 0;
 }
+
+.hero-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 画面比に合わせてトリミング */
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  /* うっすら暗くする例（好みで調整/不要なら消す） */
+  background: linear-gradient(180deg, rgba(0,0,0,.25), rgba(0,0,0,.25));
+}
+
 .mainvisual img {
   width: 100%;
-  max-width: 1920px;
+  /* max-width: 1920px; */
+  max-width: none;
   object-fit: cover;
-  height: auto;
+  /* height: auto; */
+  height: 100%;
 }
 
 /*-------------------------------------------
@@ -450,6 +471,12 @@ SP
   .main-content {
     top: 350px;
     left: 0px;
+
+    position: relative;
+    margin-top: 100svh;
+    top: auto;
+
+    z-index: 10;
   }
 
   .sec-title {
