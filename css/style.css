@@ -201,7 +201,8 @@ mainvisual
 
 .hero-overlay {
   position: absolute;
-  inset: 0;
+  top: 20px;
+  /* inset: 0; */
   /* うっすら暗くする例（好みで調整/不要なら消す） */
   background: linear-gradient(180deg, rgba(0,0,0,.25), rgba(0,0,0,.25));
 }
@@ -395,6 +396,10 @@ photo
 SP
 -------------------------------------------*/
 @media screen and (max-width: 900px) {
+#overlay ul li:first-child {
+    margin-top: 74px; /* 好みで調整 */
+  }
+
   #slider .prev,
   #slider .next {
     top: 40%;
